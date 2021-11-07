@@ -1,0 +1,39 @@
+{
+  "firstName": "Francisco",
+  "lastName": "Araujo",
+  "address": {
+    "city": "Juárez",
+    "state": "Nuevo León",
+    "country": "México",
+    "postalCode": "67275"
+  },
+  "email": [
+    "jfaraujo.dev@gmail.com",
+    "contacto@fjaraujo.com"
+  ],
+  "socialMedia": [
+    {
+      "type": "website",
+      "url": "https://www.fjaraujo.com/"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/fjarauj0"
+    },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/in/fjarauj0/"
+    },
+    {
+      "type": "twitter",
+      "url": "https://twitter.com/fjarauj0"
+    }
+  ],
+  "currentStack": [
+    "JavaScript",
+    "React",
+    "NextJS",
+    "Node",
+    "TailwindCSS"
+  ]
+}
