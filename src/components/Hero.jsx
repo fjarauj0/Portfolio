@@ -18,10 +18,13 @@ const Hero = () => {
       // }}
     >
       <div className='hero-overlay bg-opacity-60 bg-base-300 relative'>
-        <a href='#projects'>
+        <a
+          href='#projects'
+          className='absolute bottom-10 left-1/2 transform -translate-x-1/2'
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            className='h-14 w-14 absolute bottom-5 left-1/2 transform -translate-x-1/2 z-40 animate-bounce transition duration-300 ease-in-out hover:text-accent'
+            className='h-14 w-14 z-40 animate-bounce transition duration-300 ease-in-out hover:text-accent'
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'
