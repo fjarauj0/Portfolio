@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
@@ -7,8 +7,14 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t, i18n } = useTranslation();
+  useEffect(() => {
+    i18n.changeLanguage(localStorage.getItem('lang'));
+  }, []);
+
   return (
     <div
       id='hero'
@@ -41,12 +47,10 @@ const Hero = () => {
       <motion.div className='text-center hero-content'>
         <div className='max-w-md'>
           <h1 className='mb-5 text-5xl font-bold'>
-            ¡Hola! soy <span className='text-accent'>Francisco Araujo</span>
+            {t('hello')}
+            <span className='text-accent'>Francisco Araujo</span>
           </h1>
-          <p className='mb-4'>
-            Soy desarrollador web autodidacta, enfocado en la parte de frontend.
-            Me gusta resolver problemas a través de código.
-          </p>
+          <p className='mb-4'>{t('intro')}</p>
           <p className='mb-4 text-5xl md:text-6xl'>
             <a href='mailto:fjaraujo.dev@gmail.com' target='_blank'>
               <FontAwesomeIcon className='social-btn' icon={faEnvelope} />

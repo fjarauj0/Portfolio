@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Helmet } from 'react-helmet';
-
-import '@/index.css';
 import App from '@/App';
+import { Helmet } from 'react-helmet';
+import './i18n';
+import '@/index.css';
+import ScrollUp from '@/components/ScrollUp';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <Helmet
       defaultTitle='Francisco Araujo'
       titleTemplate='%s | Francisco Araujo'
@@ -15,6 +16,7 @@ ReactDOM.render(
       <html lang='id' amp />
     </Helmet>
     <App />
-  </React.StrictMode>,
+    <ScrollUp />
+  </>,
   document.getElementById('root')
 );

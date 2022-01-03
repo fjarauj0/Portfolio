@@ -14,13 +14,16 @@
     "@fortawesome/react-fontawesome": "^0.1.16",
     "daisyui": "^1.16.1",
     "framer-motion": "^5.2.1",
+    "i18next": "^21.6.4",
     "pretty-print-json": "^1.1.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-helmet": "^6.1.0",
+    "react-i18next": "^11.15.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.4.3",
+    "react-snowfall": "^1.1.0",
     "theme-change": "^2.0.2"
   },
   "devDependencies": {
