@@ -16,13 +16,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div
-      id='hero'
-      className='hero min-h-screen'
-      // style={{
-      //   backgroundImage: "url('')",
-      // }}
-    >
+    <div id='hero' className='hero min-h-screen'>
       <div className='hero-overlay bg-opacity-60 bg-base-300 relative'>
         <a
           href='#projects'
@@ -44,14 +38,21 @@ const Hero = () => {
           </svg>
         </a>
       </div>
-      <motion.div className='text-center hero-content'>
+      <div className='text-center hero-content'>
         <div className='max-w-md'>
-          <h1 className='mb-5 text-5xl font-bold'>
+          <h1 className='mb-5 text-5xl font-bold' data-aos='fade-up'>
             {t('hello')}
             <span className='text-accent'>Francisco Araujo</span>
           </h1>
-          <p className='mb-4'>{t('intro')}</p>
-          <p className='mb-4 text-5xl md:text-6xl'>
+          <p className='mb-4' data-aos='fade-up' data-aos-delay='300'>
+            {t('intro')}
+          </p>
+          <div
+            className='mb-4 text-5xl md:text-6xl '
+            data-aos='zoom-in'
+            data-aos-easing='ease'
+            data-aos-delay='500'
+          >
             <a href='mailto:fjaraujo.dev@gmail.com' target='_blank'>
               <FontAwesomeIcon className='social-btn' icon={faEnvelope} />
             </a>
@@ -64,7 +65,7 @@ const Hero = () => {
             <a href='https://www.linkedin.com/in/fjarauj0/' target='_blank'>
               <FontAwesomeIcon className='social-btn' icon={faLinkedinIn} />
             </a>
-          </p>
+          </div>
           {/* <button className='btn btn-accent'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -83,7 +84,7 @@ const Hero = () => {
             Resume
           </button> */}
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

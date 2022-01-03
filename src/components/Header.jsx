@@ -117,7 +117,7 @@ const Header = () => {
                 />
               </svg>
               Blog
-            </Link> */}
+            </Link>
             <Link to='/about' className='btn btn-ghost btn-sm rounded-btn'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -134,7 +134,7 @@ const Header = () => {
                 />
               </svg>
               <span className='hidden md:inline'>{t('about')}</span>
-            </Link>
+            </Link> */}
             <div className='divider divider-vertical' />
             <button
               className='btn btn-outline btn-accent btn-sm btn-square'
